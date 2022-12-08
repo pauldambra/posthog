@@ -15,7 +15,7 @@ attrs==19.3.0
     #   pytest
 black==19.10b0
     # via -r requirements-dev.in
-certifi==2020.12.5
+certifi==2022.12.7
     # via requests
 chardet==4.0.0
     # via requests
@@ -27,26 +27,34 @@ coreapi==2.3.3
     # via djangorestframework-stubs
 coreschema==0.0.4
     # via coreapi
-django-stubs-ext==0.2.0
-    # via django-stubs
-django-stubs==1.8.0
-    # via
-    #   -r requirements-dev.in
-    #   djangorestframework-stubs
 django==3.1.12
     # via
     #   -r requirements-dev.in
     #   django-stubs
     #   django-stubs-ext
     #   djangorestframework
-djangorestframework-stubs==1.4.0
-    # via -r requirements-dev.in
+django-stubs==1.8.0
+    # via
+    #   -r requirements-dev.in
+    #   djangorestframework-stubs
+django-stubs-ext==0.2.0
+    # via django-stubs
 djangorestframework==3.12.2
+    # via -r requirements-dev.in
+djangorestframework-stubs==1.4.0
     # via -r requirements-dev.in
 entrypoints==0.3
     # via flake8
 fakeredis==1.4.5
     # via -r requirements-dev.in
+flake8==3.7.9
+    # via
+    #   -r requirements-dev.in
+    #   flake8-bugbear
+    #   flake8-colors
+    #   flake8-commas
+    #   flake8-comprehensions
+    #   flake8-print
 flake8-bugbear==20.1.4
     # via -r requirements-dev.in
 flake8-colors==0.1.6
@@ -61,14 +69,6 @@ flake8-logging-format==0.6.0
     # via -r requirements-dev.in
 flake8-print==3.1.4
     # via -r requirements-dev.in
-flake8==3.7.9
-    # via
-    #   -r requirements-dev.in
-    #   flake8-bugbear
-    #   flake8-colors
-    #   flake8-commas
-    #   flake8-comprehensions
-    #   flake8-print
 freezegun==0.3.15
     # via -r requirements-dev.in
 idna==2.10
@@ -85,15 +85,15 @@ markupsafe==1.1.1
     # via jinja2
 mccabe==0.6.1
     # via flake8
-mypy-extensions==0.4.3
-    # via
-    #   -r requirements-dev.in
-    #   mypy
 mypy==0.790
     # via
     #   -r requirements-dev.in
     #   django-stubs
     #   djangorestframework-stubs
+mypy-extensions==0.4.3
+    # via
+    #   -r requirements-dev.in
+    #   mypy
 packaging==20.4
     # via
     #   -r requirements-dev.in
@@ -115,15 +115,15 @@ pyflakes==2.1.1
     # via flake8
 pyparsing==2.4.7
     # via packaging
-pytest-django==4.1.0
-    # via -r requirements-dev.in
-pytest-mock==3.5.1
-    # via -r requirements-dev.in
 pytest==6.2.2
     # via
     #   -r requirements-dev.in
     #   pytest-django
     #   pytest-mock
+pytest-django==4.1.0
+    # via -r requirements-dev.in
+pytest-mock==3.5.1
+    # via -r requirements-dev.in
 python-dateutil==2.8.1
     # via freezegun
 pytz==2021.1
