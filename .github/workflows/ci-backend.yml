@@ -331,6 +331,9 @@ jobs:
                   cache-dependency-path: '**/requirements*.txt'
                   token: ${{ secrets.POSTHOG_BOT_GITHUB_TOKEN }}
 
+            # UV is a super fast alternative to pip
+            - run: pip install uv                  
+
             - name: Install SAML (python3-saml) dependencies
               run: |
                   sudo apt-get update
@@ -339,7 +342,7 @@ jobs:
             - name: Install python dependencies
               shell: bash
               run: |
-                  python -m pip install -r requirements.txt -r requirements-dev.txt
+                  uv pip install --system -r requirements.txt -r requirements-dev.txt
 
             - name: Add kafka host to /etc/hosts for kafka connectivity
               run: sudo echo "127.0.0.1 kafka" | sudo tee -a /etc/hosts
